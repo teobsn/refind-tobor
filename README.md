@@ -25,13 +25,17 @@ Minimalistic dark theme with icon generation script for [rEFInd](http://www.rods
 
 ### Generator script
 This repository contains a `generate.sh` script in the `Scripts/` directory.
+
 The script automatically generates `.png` icons of a desired resolution using source files (`.svg` or `.png`) in the `Source/` directory.
-The script automatically (un)crops the images by adding a transparent border. This can be configured, and is meant as a means of adding padding to icons.
+It also automatically (un)crops the images by adding a transparent border. This can be configured, and is meant as a means of adding padding to icons.
 
 The resolution (output size) of the icons can also be configured.
 This is useful if you don't want rEFInd to scale icons, but rather render icons in a pixel perfect manner.
 By default, the icons provided in the repository are exactly 2x (per dimension, 4x total) bigger in resolution (512px, 128px) than the option specified in the theme's config file (256px, 64px), so that the icon size in the theme's config file can be changed without significantly impacting visual clarity, and without the user needing to invoke the generator script.
 
+To invoke the script, simply run it from the `Scripts/` directory.
+`$ ./generate.sh`
+
 ## Screenshots
 
-![screenshot](Screenshots/1.png "screenshot")
+![screenshot](Screenshots/1.png "Screenshot")
