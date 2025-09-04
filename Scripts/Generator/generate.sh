@@ -51,7 +51,6 @@ echo "----- Processing OS icons -----"
 osoutputbase=$(($(($OUTPUT_SIZE_OS_PX * $OUTPUT_CROP_OS)) / 100))
 
 # Process png files
-
 if find Source/os/png/ -mindepth 1 -maxdepth 1 | read; then
 	for file in Source/os/png/*
 	do
@@ -238,6 +237,3 @@ fi
 if find WorkingDirectory/ui/small/ -mindepth 1 -maxdepth 1 | read; then
 	mv WorkingDirectory/ui/small/* Result/icons/
 fi
-
-# Cursor
-cp "Source/ui/svg/mouse.svg" "Result/icons/svg/mouse.svg"
