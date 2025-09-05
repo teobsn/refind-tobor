@@ -42,7 +42,6 @@ mkdir -p WorkingDirectory/ui/small/
 mkdir -p WorkingDirectory/ui/big/
 mkdir -p WorkingDirectory/ui/selection/
 mkdir -p Result/icons/
-mkdir -p Result/icons/svg/
 
 
 
