@@ -23,7 +23,7 @@ Minimalistic dark theme with icon generation script for [rEFInd](http://www.rods
 
  5. To use the theme add `include themes/refind-tobor/theme.conf` to rEFInd's configuration file.
 
-    ```nano refind-tobor/refind.conf```
+    ```nano refind.conf```
 
  6. (Optional) Remove repository leftovers.
 
