@@ -23,8 +23,8 @@ Minimalistic dark theme with icon generation script for [rEFInd](http://www.rods
  6. (Optional) Remove repository leftovers.
     ```rm -r refind-tobor/```
 
-### Generator script
-This repository contains a `generate.sh` script in the `Scripts/` directory.
+### Icon Generator script
+This repository contains a `generate.sh` script in the `Scripts/Icon-Generator` directory.
 
 The script automatically generates `.png` icons of a desired resolution using source files (`.svg` or `.png`) in the `Source/` directory.
 It also automatically (un)crops the images by adding a transparent border. This can be configured, and is meant as a means of adding padding to icons.
