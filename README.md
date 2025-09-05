@@ -6,21 +6,27 @@ Minimalistic dark theme with icon generation script for [rEFInd](http://www.rods
 ### Installation
 
  1. Locate the rEFInd EFI directory. This is usually `/boot/efi/EFI/refind`.
+
     ```cd /boot/efi/EFI/refind/```
 
  2. Create a directory called `themes` inside it, if it doesn't already exist.
+
     ```mkdir -p themes```
 
  3. Clone this repository.
+
     ```git clone https://github.com/teobsn/refind-tobor```
 
  4. Move the `refind-tobor` directory from this repository into the `themes` directory.
+
     ```mv refind-tobor/refind-tobor themes/```
 
- 5. To use the theme add `include themes/refind-tobor/theme.conf` to rEFInd's configuration file
+ 5. To use the theme add `include themes/refind-tobor/theme.conf` to rEFInd's configuration file.
+
     ```nano refind-tobor/refind.conf```
 
  6. (Optional) Remove repository leftovers.
+
     ```rm -r refind-tobor/```
 
 ### Icon Generator script
@@ -34,7 +40,8 @@ This is useful if you don't want rEFInd to scale icons, but rather render icons 
 By default, the icons provided in the repository are exactly 2x (per dimension, 4x total) bigger in resolution (512px, 128px) than the option specified in the theme's config file (256px, 64px), so that the icon size in the theme's config file can be changed without significantly impacting visual clarity, and without the user needing to invoke the generator script.
 
 To invoke the script, simply run it from the `Scripts/` directory.
-`$ ./generate.sh`
+
+`./generate.sh`
 
 ## Screenshots
 
